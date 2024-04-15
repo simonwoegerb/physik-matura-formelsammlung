@@ -1,0 +1,51 @@
+% ! TeX root = *.tex
+\documentclass{paper}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{tabularx}
+\usepackage[per-mode=fraction]{siunitx}
+
+\usepackage{amsfonts,amssymb,amsthm,bm,amsmath}
+\usepackage{esvect}
+\makeatletter
+\newcommand{\mathleft}{\@fleqntrue\@mathmargin0pt}
+\newcommand{\mathcenter}{\@fleqnfalse}
+\makeatother
+{\renewcommand{\arraystretch}{1.4} %<- modify value to suit your needs
+\begin{document}
+\title{Formelsammlung}
+\subtitle{Schriftliche Reifeprüfung Physik 2023/2024}
+\author{Simon Wögerbauer}
+\date{\today}
+\maketitle
+\smalltableofcontents
+\mathleft
+\section{Grundlegendes}
+\begin{tabularx}{\textwidth}{X|X}
+	Winkelgeschwindigkeit zu Frequenz und Periodendauer & $\omega = \frac{2\pi}{T}=2\pi*f$ \\
+	Masse & $m\: [\unit{\kilo\gram}]$ \\
+	Länge & $s\: [\unit{\meter}]$\\
+Zeit & $t\:[s]$\\
+Geschwindigkeit & $v\:[\unit{\meter\per\second}]$\\
+Beschleunigung & $a\:[\unit{\meter\per\second\squared}]$\\
+Frequenz & $f\: [\unit{\hertz}]$\\
+Kraft & $F\: [\unit{\newton}]$\\
+Arbeit & $W \: [\unit{\newton\meter}]$\\
+Leistung & $P \: [\unit{\watt},\unit{\joule\per\second}]$
+\end{tabularx}
+
+\section{Kinematik}
+\mathleft
+\begin{tabularx}{\textwidth}{r|X}
+	Newton II: & $F=m*a$\\
+	Newton III: & ${F}_{\vv{\!AB}}=-{F}_{\vv{\!BA}}$,$\quad F_{AB} = F_{BA}$, actio = reactio \\
+	Beschleunigung & $a=\frac{\Delta v}{\Delta t}$\\
+	Zentripedalkraft & $F_{ZP}=\frac{mv^2}{2}$\\
+	Potentielle Energie & $W_{pot} = F_G * h$\\
+	Kinetische Energie & $W_{kin} = \frac{1}{2}*m*v^2$ \\
+	Gravitationskraft & $F_G = \frac{m_1 * m_2 }{r^2}$\\
+	Gewichtskraft & $F_g = m * g$\\
+\end{tabularx}
+\end{document}
