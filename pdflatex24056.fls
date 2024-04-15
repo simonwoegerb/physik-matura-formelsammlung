@@ -1,4 +1,0 @@
-PWD /home/simon-woegerbauer/git/formelsammlung_physik_matura
-INPUT /etc/texmf/web2c/texmf.cnf
-INPUT /usr/share/texmf/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt

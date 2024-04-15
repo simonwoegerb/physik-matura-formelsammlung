@@ -1,3 +1,0 @@
-\babel@toc {german}{}\relax 
-\contentsline {section}{\numberline {1}Grundlegendes}{1}{}%
-\contentsline {section}{\numberline {2}Kinematik}{2}{}%
