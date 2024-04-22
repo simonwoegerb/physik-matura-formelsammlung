@@ -1,10 +1,11 @@
 % ! TeX root = *.tex
-\documentclass{paper}
+\documentclass[11pt,a4paper]{paper}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{multicol}
 \usepackage{color}
 \usepackage{tabularx}
+\usepackage[margin=3cm]{geometry}
 \usepackage[per-mode=fraction]{siunitx}
 
 \usepackage{amsfonts,amssymb,amsthm,bm,amsmath}
@@ -22,6 +23,7 @@
 \maketitle
 \smalltableofcontents
 \mathleft
+%\begin{multicols}{2}
 \section{Grundlegendes}
 \begin{tabularx}{\textwidth}{X|X}
 	Winkelgeschwindigkeit zu Frequenz und Periodendauer & $\omega = \frac{2\pi}{T}=2\pi*f$ \\
@@ -36,9 +38,9 @@ Arbeit & $W \: [\unit{\newton\meter}]$\\
 Leistung & $P \: [\unit{\watt},\unit{\joule\per\second}]$
 \end{tabularx}
 
-\section{Kinematik}
+\section{Mechanik}
 \mathleft
-\begin{tabularx}{\textwidth}{r|X}
+\begin{tabularx}{\textwidth}{X|X}
 	Newton II: & $F=m*a$\\
 	Newton III: & ${F}_{\vv{\!AB}}=-{F}_{\vv{\!BA}}$,$\quad F_{AB} = F_{BA}$, actio = reactio \\
 	Beschleunigung & $a=\frac{\Delta v}{\Delta t}$\\
@@ -47,5 +49,45 @@ Leistung & $P \: [\unit{\watt},\unit{\joule\per\second}]$
 	Kinetische Energie & $W_{kin} = \frac{1}{2}*m*v^2$ \\
 	Gravitationskraft & $F_G = \frac{m_1 * m_2 }{r^2}$\\
 	Gewichtskraft & $F_g = m * g$\\
+	Dichte & $\delta = \frac{m}{V}$\\
+	Geschwindigkeit & $v = \frac{\Delta s}{\Delta t}$\\
+	Unbeschleunigte Bewegung & $ v = \frac{s}{t}$\\
+	gleichmäßig beschleunigte Bewegung & $s = \frac{a}{2}*t^2$ \hspace{.5cm} $v = a * t $\\
+	Hydrostatischer Druck & $p = \rho * g * h$ \\
+	Bernoulli-Gleichung & $\frac{1}{2}*\rho*v^2 + \rho * g * h + p = const.$\\
+	3. Kepler-Gesetz (Planetenbahnen) & $ (\frac{T_1}{T_2})^2 = (\frac{r_1}{r_2})^3$\\
+	Impuls & $\vec{p} = m * \vec{v}$\\
+\end{tabularx}
+\section{Elektronik}
+\begin{tabularx}{\textwidth}{X|X}
+	Elektrische Stromarbeit & $ W_{el} = Q * I = I * U * t$\\
+	Elektrische Stromleistung & $P_{el} = U * I$\\
+	Elektrischer Strom & $I = \frac{\Delta Q}{\Delta t}$\\
+	Ohm'sches Gesetz & $I=\frac{U}{R}$\\
+	Widerstand Serie & $R_{ges} = R_1 + R_2 + R_n$\\
+	Widerstand Parallel & $\frac{1}{R_{ges}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_n}$\\
+	Coulomb-Kraft & $F = \frac{1}{4*\pi * \epsilon_{0}} * \frac{Q_1 * Q_2}{r^2}$\\
+	Ladung eines Kondensators & $Q = U * C$\\
+	Wechselspannung & $U = U_0 * \sin{\omega t}$\\
+\end{tabularx}
+\section{Wärmelehre}
+\begin{tabularx}{\textwidth}{X|X}
+	Längenänderung & $l = l_0 * (1 + \alpha * \Delta T)$\\
+	Allgemeine Gasgleichung & $pV = n*R*T = n *K_b * T$\\
+	Isobare Zustandsänderung & $\frac{V}{T} = const.$\\
+	Isotherme Zustandsänderung & $p*V = const.$\\
+	Isochore Zustandsänderung & $\frac{p}{T} = const.$\\
+	Adiabatische Zustandsänderung & $p * V^K = const$
+\end{tabularx}
+%\end{multicols}
+\section{Schwingungen und Wellen}
+\begin{tabularx}{\textwidth}{X|X}
+Harmonische Schwingung / Elongation & $y = r * \sin{\omega t}$\\
+Harmonische Schwingung / Geschwindigkeit & $y = r * \omega * \cos{\omega t}$\\
+Harmonische Schwingung / Beschleunigung & $y = -r * \omega^2 * \sin{\omega t}$\\
+Federpendel & $T = 2\pi * \sqrt{\frac{m}{k}}$\\
+Fadenpendel & $T= 2\pi * \sqrt{\frac{l}{g}}$\\
+
 \end{tabularx}
 \end{document}
+
