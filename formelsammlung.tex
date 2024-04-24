@@ -1,5 +1,5 @@
 % ! TeX root = *.tex
-\documentclass[11pt,a4paper]{paper}
+\documentclass[12pt,a4paper]{paper}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{multicol}
@@ -15,11 +15,12 @@
 \newcommand{\mathcenter}{\@fleqnfalse}
 \makeatother
 {\renewcommand{\arraystretch}{1.4} %<- modify value to suit your needs
-\begin{document}
 \title{Formelsammlung}
 \subtitle{Schriftliche Reifeprüfung Physik 2023/2024}
-\author{}
+\author{Wögerbauer, S.}
 \date{\today}
+\begin{document}
+
 \maketitle
 \smalltableofcontents
 \mathleft
@@ -30,6 +31,7 @@
 	Masse & $m\: [\unit{\kilo\gram}]$ \\
 	Länge & $s\: [\unit{\meter}]$\\
 Zeit & $t\:[s]$\\
+Spezifische Wärmekapazität & $c\: [\unit{\joule\per\kilo\gram\per\kelvin}]$\\
 Geschwindigkeit & $v\:[\unit{\meter\per\second}]$\\
 Beschleunigung & $a\:[\unit{\meter\per\second\squared}]$\\
 Frequenz & $f\: [\unit{\hertz}]$\\
@@ -55,7 +57,7 @@ Ladung & $C\:[\unit{\coulomb}]$
 	Kinetische Energie & $W_{kin} = \frac{1}{2}*m*v^2$ \\
 	Gravitationskraft & $F_G = \frac{m_1 * m_2 }{r^2}$\\
 	Gewichtskraft & $F_g = m * g$\\
-	Dichte & $\delta = \frac{m}{V}$\\
+	Dichte & $\rho = \frac{m}{V}$\\
 	Geschwindigkeit & $v = \frac{\Delta s}{\Delta t}$\\
 	Unbeschleunigte Bewegung & $ v = \frac{s}{t}$\\
 	Gleichmäßig beschleunigte Bewegung & $s = \frac{a}{2}*t^2$ \hspace{.5cm} $v = a * t $\\
@@ -63,9 +65,19 @@ Ladung & $C\:[\unit{\coulomb}]$
 	Bernoulli-Gleichung & $\frac{1}{2}*\rho*v^2 + \rho * g * h + p = const.$\\
 	3. Kepler-Gesetz (Planetenbahnen) & $ (\frac{T_1}{T_2})^2 = (\frac{r_1}{r_2})^3$\\
 	Impuls & $\vec{p} = m * \vec{v}$\\
-	Lotrechter Wurf Höhe & $x$\\
-	Lotrechter Wurf Geschwindigkeit & $x$\\
+	Lotrechter Wurf Höhe & $h = \frac{g* t_{ou}^2}{2}$\\
+	Lotrechter Wurf Geschwindigkeit & $v = g * \Delta t$\\
 	Schiefer Wurf Gleichung & $y(t) = -\frac{1}{2}*g*t^2 + v_0*sin(\alpha)*t + h_0$\\
+	Schiefer Wurf Geschwindigkeiten & $v_{V} = v_0 * \sin{\alpha} \:\:\:\:\: v_{H} = v_0 * \cos\alpha$\\
+\end{tabularx}
+\section{Relativität \& Quantenphysik}
+\begin{tabularx}{\textwidth}{X|X}
+Zeitdilatation & $t' = t * \sqrt{1- (\frac{v}{c})^2}$\\
+Längenkontraktion & $s' = s * \sqrt{1- (\frac{v}{c})^2}$\\
+Dynamische Masse & $m_{d} = \frac{m_0}{\sqrt{1- (\frac{v}{c})^2}}$\\
+Geschwindigkeitsaddition & u = $\frac{{u' + v}}{{1 + \frac{{u'  * v}}{{{c^2}}}}} $, wobei $u$\dots Geschw. im System $S$, $u'$\dots Geschw. im System $S'$, $v'$\dots Geschw. von $S'$ im Bezug zu $S$\\
+Heisenberg'sche Unschärferealation & $\Delta x \cdot \Delta p \gtrapprox h $
+
 \end{tabularx}
 \section{Elektronik}
 \begin{tabularx}{\textwidth}{X|X}
@@ -79,14 +91,15 @@ Ladung & $C\:[\unit{\coulomb}]$
 	Ladung eines Kondensators & $Q = U * C$\\
 	Wechselspannung & $U = U_0 * \sin{\omega t}$\\
 \end{tabularx}
-\section{Wärmelehre}
+\section{Thermodynamik}
 \begin{tabularx}{\textwidth}{X|X}
+	Wärmeenergie & $Q=c*m*\Delta T$\\
 	Längenänderung & $l = l_0 * (1 + \alpha * \Delta T)$\\
 	Allgemeine Gasgleichung & $pV = n*R*T = n *K_b * T$\\
 	Isobare Zustandsänderung & $\frac{V}{T} = const.$\\
 	Isotherme Zustandsänderung & $p*V = const.$\\
 	Isochore Zustandsänderung & $\frac{p}{T} = const.$\\
-	Adiabatische Zustandsänderung & $p * V^K = const$
+	Adiabatische Zustandsänderung & $p * V^{1.4} = const$
 \end{tabularx}
 %\end{multicols}
 \section{Schwingungen und Wellen}
