@@ -13,9 +13,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: main.tex
-      - name: Rename file 
-        run: mv main.pdf formelsammlung.pdf
+          root_file: formelsammlung.tex
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
