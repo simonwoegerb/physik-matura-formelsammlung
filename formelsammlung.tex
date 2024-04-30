@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{multicol}
+\usepackage{fullminipage}
 \usepackage{color}
 \usepackage{tabularx}
 \usepackage[margin=3cm]{geometry}
@@ -20,14 +21,14 @@
 \date{\today}
 \begin{document}
 \maketitle
-\smalltableofcontents
 \mathleft
-%\begin{multicols}{2}
 \section{Grundlegendes}
 \begin{tabularx}{\textwidth}{X|X}
-	Winkelgeschwindigkeit zu Frequenz und Periodendauer & $\omega = \frac{2\pi}{T}=2\pi*f$ \\
-	Masse & $m\: [\unit{\kilo\gram}]$ \\
-	Länge & $s\: [\unit{\meter}]$\\
+Zusammenhang Frequenz/Wellenlänge & $c = \lambda * f$\\
+Pferdestärken berechnen & $\qty{1}{\kilo\watt} = \qty{1.36}{PS}$\\
+Winkelgeschwindigkeit & $\omega = \frac{2\pi}{T}=2\pi*f\:[\unit{\second^{-1}}]$ \\
+Masse & $m\: [\unit{\kilo\gram}]$ \\
+Länge & $s\: [\unit{\meter}]$\\
 Zeit & $t\:[s]$\\
 Spezifische Wärmekapazität & $c\: [\unit{\joule\per\kilo\gram\per\kelvin}]$\\
 Geschwindigkeit & $v\:[\unit{\meter\per\second}]$\\
@@ -44,14 +45,14 @@ Ladung & $C\:[\unit{\coulomb}]$
 
 \section{Mechanik}
 \mathleft
-
 \begin{tabularx}{\textwidth}{X|X}
 	Ableitungen & $s'(t) = v(t) \;\;\&\;\; v'(t) = a(t)$\\
 	Newton II: & $F=m*a$\\
 	Newton III: & ${F}_{\vv{\!AB}}=-{F}_{\vv{\!BA}}$,$\quad F_{AB} = F_{BA}$, actio = reactio \\
 	Beschleunigung & $a=\frac{\Delta v}{\Delta t}$\\
 	Zentripedalkraft & $F_{ZP}=\frac{mv^2}{r}$\\
-	Potentielle Energie & $W_{pot} = F_G * h$\\
+	Leistung & $P = \frac{W}{t}$\\
+	Potentielle Energie & $W_{pot} = F_g * h$\\
 	Kinetische Energie & $W_{kin} = \frac{1}{2}*m*v^2$ \\
 	Gravitationskraft & $F_G =G* \frac{m_1 * m_2 }{r^2}$\\
 	Gewichtskraft & $F_g = m * g$\\
@@ -63,15 +64,15 @@ Ladung & $C\:[\unit{\coulomb}]$
 	Bernoulli-Gleichung & $\frac{1}{2}*\rho*v^2 + \rho * g * h + p = const.$\\
 	3. Kepler-Gesetz (Planetenbahnen) & $ (\frac{T_1}{T_2})^2 = (\frac{r_1}{r_2})^3$\\
 	Impuls & $\vec{p} = m * \vec{v}$\\
-	Lotrechter Wurf Höhe & $h = \frac{g* t_{ou}^2}{2}$\\
-	Lotrechter Wurf Geschwindigkeit & $v = g * \Delta t$\\
+	Tangentialgeschwindigkeit & $v_T = \omega * r$\\
+	Lotrechter Wurf Höhe & $h = \frac{g* t^2}{2}$\\
+	Lotrechter Wurf Geschwindigkeit & $v = g * \frac{t}{2}$\\
 	Schiefer Wurf Gleichung & $y(t) = -\frac{1}{2}*g*t^2 + v_0*sin(\alpha)*t + h_0$\\
 	Schiefer Wurf Geschwindigkeiten & $v_{V} = v_0 * \sin{\alpha} \:\:\:\:\: v_{H} = v_0 * \cos\alpha$\\
 \end{tabularx}
 \section{Relativität \& Quantenphysik}
 \begin{tabularx}{\textwidth}{X|X}
-	Elektronenvolt Formel & $E=q*U$\\
-Zusammenhang Frequenz/Wellenlänge & $c = \lambda * f$\\
+	Potentielle Energie Strom & $E=q*U$\\
 Energie des Photons &  $E = h *f$\\
 Zeitdilatation & $t' = t * \sqrt{1- (\frac{v}{c})^2}$\\
 Längenkontraktion & $s' = s * \sqrt{1- (\frac{v}{c})^2}$\\
@@ -79,7 +80,6 @@ Dynamische Masse & $m_{d} = \frac{m_0}{\sqrt{1- (\frac{v}{c})^2}}$\\
 Photoelektrischer Effekt & $E_{kin} + W_A=h*f$\\
 Geschwindigkeitsaddition & u = $\frac{{u' + v}}{{1 + \frac{{u'  * v}}{{{c^2}}}}} $, wobei $u$\dots Geschw. im System $S$, $u'$\dots Geschw. im System $S'$, $v'$\dots Geschw. von $S'$ im Bezug zu $S$\\
 Heisenberg'sche Unschärferealation & $\Delta x \cdot \Delta p \gtrapprox h $
-
 \end{tabularx}
 \section{Elektronik}
 \begin{tabularx}{\textwidth}{X|X}
@@ -109,14 +109,55 @@ Heisenberg'sche Unschärferealation & $\Delta x \cdot \Delta p \gtrapprox h $
 	Isochore Zustandsänderung & $\frac{p}{T} = const.$\\
 	Adiabatische Zustandsänderung & $p * V^{1.4} = const$
 \end{tabularx}
-%\end{multicols}
 \section{Schwingungen und Wellen}
 \begin{tabularx}{\textwidth}{X|X}
 Harmonische Schwingung / Elongation & $y = r * \sin{\omega t}$\\
 Harmonische Schwingung / Geschwindigkeit & $y = r * \omega * \cos{\omega t}$\\
 Harmonische Schwingung / Beschleunigung & $y = -r * \omega^2 * \sin{\omega t}$\\
 Federpendel & $T = 2\pi * \sqrt{\frac{m}{k}}$\\
+Energie Feder & $E_{Feder} = \frac{K * x^2}{2}$\\
 Fadenpendel & $T= 2\pi * \sqrt{\frac{l}{g}}$\\
 \end{tabularx}
+\section{Einheiten-Präfixe}
+\begin{figure}[h]
+	\begin{minipage}{.5\textwidth}
+	\begin{tabularx}{\textwidth}{|X|X|X|}
+	\hline
+	Name & Präfix & Bedeutung\\
+	\hline
+	Terra- & T & $10^{12}$\\
+	\hline
+	Giga- & G & $10^9$\\
+	\hline
+	Mega- & M & $10^6$\\
+	\hline
+	Kilo- & k & $10^3$\\
+	\hline
+	Hecto- & h & $10^2$\\
+	\hline
+	Deka- & da & $10^1$\\
+	\hline
+\end{tabularx}
+\end{minipage}
+	\begin{minipage}{.5\textwidth}
+	\begin{tabularx}{\textwidth}{|X|X|X|}
+	\hline
+	Name & Präfix & Bedeutung\\
+	\hline
+	Deci- & d & $10^{-1}$\\
+	\hline
+	Centi- & c & $10^{-2}$\\
+	\hline
+	Milli- & m & $10^{-3}$\\
+	\hline
+	Micro- & $\mu$ & $10^{-6}$\\
+	\hline
+	Nano- & n & $10^{-9}$\\
+	\hline
+	Pico- & p & $10^{-12}$\\
+	\hline
+\end{tabularx}
+\end{minipage}
+\end{figure}
 \end{document}
 
