@@ -6,7 +6,7 @@
 \usepackage{fullminipage}
 \usepackage{color}
 \usepackage{tabularx}
-\usepackage[margin=3cm]{geometry}
+\usepackage[left=2cm, right = 1cm]{geometry}
 \usepackage[per-mode=fraction]{siunitx}
 \usepackage{amsfonts,amssymb,amsthm,bm,amsmath}
 \usepackage{esvect}
@@ -16,16 +16,14 @@
 \makeatother
 {\renewcommand{\arraystretch}{1.4} %<- modify value to suit your needs
 \title{Formelsammlung}
-\subtitle{Schriftliche Reifeprüfung Physik 2023/2024}
+\subtitle{Schriftliche Reifeprüfung Physik 2023/24}
 \author{}
-\date{\today}
 \begin{document}
 \maketitle
 \mathleft
 \section{Grundlegendes}
 \begin{tabularx}{\textwidth}{X|X}
-Zusammenhang Frequenz/Wellenlänge & $c = \lambda * f$\\
-Pferdestärken berechnen & $\qty{1}{\kilo\watt} = \qty{1.36}{PS}$\\
+	Pferdestärken & $\qty{1}{\kilo\watt} = \qty{1000}{\watt} = \qty{1.36}{PS}$\\
 Winkelgeschwindigkeit & $\omega = \frac{2\pi}{T}=2\pi*f\:[\unit{\second^{-1}}]$ \\
 Masse & $m\: [\unit{\kilo\gram}]$ \\
 Länge & $s\: [\unit{\meter}]$\\
@@ -52,8 +50,8 @@ Ladung & $C\:[\unit{\coulomb}]$
 	Beschleunigung & $a=\frac{\Delta v}{\Delta t}$\\
 	Zentripedalkraft & $F_{ZP}=\frac{mv^2}{r}$\\
 	Leistung & $P = \frac{W}{t}$\\
-	Potentielle Energie & $W_{pot} = F_g * h$\\
-	Kinetische Energie & $W_{kin} = \frac{1}{2}*m*v^2$ \\
+	Potentielle Energie & $W_{pot} = F_g * h = m * g * h$\\
+	Kinetische Energie & $W_{kin} = \frac{m*v^2}{2}$ \\
 	Gravitationskraft & $F_G =G* \frac{m_1 * m_2 }{r^2}$\\
 	Gewichtskraft & $F_g = m * g$\\
 	Dichte & $\rho = \frac{m}{V}$\\
@@ -62,28 +60,30 @@ Ladung & $C\:[\unit{\coulomb}]$
 	Gleichmäßig beschleunigte Bewegung & $s = \frac{a}{2}*t^2$ \hspace{.5cm} $v = a * t $\\
 	Hydrostatischer Druck & $p = \rho * g * h$ \\
 	Bernoulli-Gleichung & $\frac{1}{2}*\rho*v^2 + \rho * g * h + p = const.$\\
-	3. Kepler-Gesetz (Planetenbahnen) & $ (\frac{T_1}{T_2})^2 = (\frac{r_1}{r_2})^3$\\
+	3. Kepler-Gesetz (Planetenbahnen) & $ (\frac{T_1}{T_2})^2 = (\frac{a_1}{r_2})^3$\\
 	Impuls & $\vec{p} = m * \vec{v}$\\
 	Tangentialgeschwindigkeit & $v_T = \omega * r$\\
-	Lotrechter Wurf Höhe & $h = \frac{g* t^2}{2}$\\
-	Lotrechter Wurf Geschwindigkeit & $v = g * \frac{t}{2}$\\
+	Lotrechter Wurf Gleichung & $h(t) = v_0 * t - \frac{1}{2} * g * t^2 + h_0$\\
+	Lotrechte Wurf Geschwindigkeit & $v(t) = v_0 - g * t$\\
 	Schiefer Wurf Gleichung & $y(t) = -\frac{1}{2}*g*t^2 + v_0*sin(\alpha)*t + h_0$\\
 	Schiefer Wurf Geschwindigkeiten & $v_{V} = v_0 * \sin{\alpha} \:\:\:\:\: v_{H} = v_0 * \cos\alpha$\\
 \end{tabularx}
 \section{Relativität \& Quantenphysik}
 \begin{tabularx}{\textwidth}{X|X}
-	Potentielle Energie Strom & $E=q*U$\\
-Energie des Photons &  $E = h *f$\\
+Zusammenhang Frequenz/Wellenlänge & $c = \lambda * f$\\
+Potentielle Energie & $E=q*U$\\
+Energie eines Photons &  $E = h *f$\\
 Zeitdilatation & $t' = t * \sqrt{1- (\frac{v}{c})^2}$\\
 Längenkontraktion & $s' = s * \sqrt{1- (\frac{v}{c})^2}$\\
 Dynamische Masse & $m_{d} = \frac{m_0}{\sqrt{1- (\frac{v}{c})^2}}$\\
 Photoelektrischer Effekt & $E_{kin} + W_A=h*f$\\
 Geschwindigkeitsaddition & u = $\frac{{u' + v}}{{1 + \frac{{u'  * v}}{{{c^2}}}}} $, wobei $u$\dots Geschw. im System $S$, $u'$\dots Geschw. im System $S'$, $v'$\dots Geschw. von $S'$ im Bezug zu $S$\\
-Heisenberg'sche Unschärferealation & $\Delta x \cdot \Delta p \gtrapprox h $
+Heisenberg'sche Unschärferealation & $\Delta x * \Delta p \gtrapprox h $\\
+Energie-Zeit-Unschärferealation & $\Delta E * \Delta t \ge \frac{\hbar}{2} = \frac{h}{4\pi}$
 \end{tabularx}
 \section{Elektronik}
 \begin{tabularx}{\textwidth}{X|X}
-	Elektrische Stromarbeit & $ W_{el} = Q * I = I * U * t$\\
+	Elektrische Stromarbeit & $ W_{el} = Q * U = I * U * t$\\
 	Elektrische Stromleistung & $P_{el} = U * I$\\
 	Elektrischer Strom & $I = \frac{\Delta Q}{\Delta t}$\\
 	Ohm'sches Gesetz & $I=\frac{U}{R}$\\
@@ -111,11 +111,12 @@ Heisenberg'sche Unschärferealation & $\Delta x \cdot \Delta p \gtrapprox h $
 \end{tabularx}
 \section{Schwingungen und Wellen}
 \begin{tabularx}{\textwidth}{X|X}
-Harmonische Schwingung / Elongation & $y = r * \sin{\omega t}$\\
-Harmonische Schwingung / Geschwindigkeit & $y = r * \omega * \cos{\omega t}$\\
-Harmonische Schwingung / Beschleunigung & $y = -r * \omega^2 * \sin{\omega t}$\\
+Harmonische Schwingung / Elongation & $y(t) = r * \sin{\omega t}$\\
+Harmonische Schwingung / Geschwindigkeit & $v(t) = r * \omega * \cos{\omega t}$\\
+Harmonische Schwingung / Beschleunigung & $a(t) = -r * \omega^2 * \sin{\omega t}$\\
 Federpendel & $T = 2\pi * \sqrt{\frac{m}{k}}$\\
-Energie Feder & $E_{Feder} = \frac{K * x^2}{2}$\\
+Federkraft& $F_{Feder} = K * \Delta x$\\
+Arbeit Feder & $W_{Feder} = \frac{K * x^2}{2}$\\
 Fadenpendel & $T= 2\pi * \sqrt{\frac{l}{g}}$\\
 \end{tabularx}
 \section{Einheiten-Präfixe}
